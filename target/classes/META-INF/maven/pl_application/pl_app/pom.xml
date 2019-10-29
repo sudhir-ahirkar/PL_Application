@@ -4,4 +4,9 @@
   <artifactId>pl_app</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>pl_application</name>
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jdk.version>1.8</jdk.version>
+		<junit.version>4.12</junit.version>
+	</properties>
 </project>
