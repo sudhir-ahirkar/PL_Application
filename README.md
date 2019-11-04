@@ -2,6 +2,8 @@
 
 Design a Parking Lot using Java.
 
+Github link to get application : https://github.com/sudhir-ahirkar/PL_Application.git
+
 Solution : 
 
 This is a Parking lot system designed using object oriented principles in Java.
