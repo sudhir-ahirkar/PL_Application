@@ -6,19 +6,19 @@ import com.dkatalis.parkinglot.assignment.model.Vehicle;
 
 public interface IParkingLotDataManagement<T extends Vehicle> {
 
-	public int parkCar(T vehicle);
+	public int parkCar(int level, T vehicle);
 
-	public boolean leaveCar(int slotNumber);
+	public boolean leaveCar(int level, int slotNumber);
 
-	public List<String> getStatus();
+	public List<String> getStatus(int level);
 
-	public List<String> getRegNumberForColor(String color);
+	public List<String> getRegNumberForColor(int level, String color);
 
-	public List<Integer> getSlotNumbersFromColor(String colour);
+	public List<Integer> getSlotNumbersFromColor(int level, String colour);
 
-	public int getSlotNoFromRegistrationNo(String registrationNo);
+	public int getSlotNoFromRegistrationNo(int level, String registrationNo);
 
-	public int getAvailableSlotsCount();
+	public int getAvailableSlotsCount(int level);
 
-	public void doCleanUp();
+	public void doCleanup();
 }

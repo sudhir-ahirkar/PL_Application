@@ -1,7 +1,5 @@
 package com.dkatalis.parkinglot.assignment.model;
 
-import com.dkatalis.parkinglot.assignment.constant.VehicleColor;
-
 public class Car extends Vehicle {
 
 	private int neededSpace = 3;

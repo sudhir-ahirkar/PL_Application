@@ -1,6 +1,5 @@
 package com.dkatalis.parkinglot.assignment.model;
 
-import com.dkatalis.parkinglot.assignment.constant.VehicleColor;
 import com.dkatalis.parkinglot.assignment.constant.VehicleSize;
 
 public abstract class Vehicle {

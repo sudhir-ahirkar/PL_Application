@@ -3,6 +3,7 @@ package com.dkatalis.parkinglot.assignment.utility;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.dkatalis.parkinglot.assignment.exception.ParkingException;
 import com.dkatalis.parkinglot.assignment.service.IParkingLot;
 
 public class ParkingLotUtility {
@@ -59,6 +60,13 @@ public class ParkingLotUtility {
 			valid = false;
 		}
 		return valid;
+	}
+
+	public static int getInputToProcessFile(String input) throws ParkingException {
+		if(input!=null && !input.isEmpty())
+		return input.equals("parking_lot_file_inputs.txt")?1:0;
+		else
+			throw new ParkingException("Please provide valid input");
 	}
 
 //	public static VehicleColor get(String color) {
